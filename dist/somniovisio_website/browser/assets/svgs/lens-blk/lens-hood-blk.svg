@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.556 37.425">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d2d2d;
+        stroke-width: .213px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #616161;
+        stroke-width: .425px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="logo1">
+      <g id="lens-hood-black">
+        <path class="cls-2" d="M1.903,3.43L10.312.341c.381-.085.773-.128,1.166-.128h20.879c.545,0,.987.396.987.884v34.956c0,.641-.58,1.16-1.296,1.16H10.886l-8.983-3.217V3.43Z"/>
+        <rect class="cls-1" x=".106" y="3.43" width="1.797" height="30.565"/>
+      </g>
+    </g>
+  </g>
+</svg>

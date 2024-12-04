@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="hamburger-one">
+      <g>
+        <rect class="cls-1" x=".487" y="60.387" width="99.025" height="14.126"/>
+        <path class="cls-1" d="M99.025,60.874v13.152H.975v-13.152h98.051M100,59.899H0v15.101h100v-15.101h0Z"/>
+      </g>
+      <g>
+        <rect class="cls-1" x=".487" y="30.353" width="99.025" height="14.126"/>
+        <path class="cls-1" d="M99.025,30.84v13.152H.975v-13.152h98.051M100,29.866H0v15.101h100v-15.101h0Z"/>
+      </g>
+      <g>
+        <rect class="cls-1" x=".487" y=".487" width="99.025" height="14.126"/>
+        <path class="cls-1" d="M99.025.975v13.152H.975V.975h98.051M100,0H0v15.101h100V0h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
