@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 125.317 60.103">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-5, .cls-11 {
+        fill: #1a1a1a;
+      }
+
+      .cls-1, .cls-13 {
+        stroke-width: .431px;
+      }
+
+      .cls-2 {
+        fill: #9f9f9f;
+        stroke-width: .254px;
+      }
+
+      .cls-14 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-15 {
+        stroke-width: 0px;
+      }
+
+      .cls-15, .cls-3, .cls-13 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: .186px;
+      }
+
+      .cls-4 {
+        stroke: gray;
+      }
+
+      .cls-4, .cls-16 {
+        fill: #000;
+      }
+
+      .cls-5 {
+        opacity: .85;
+      }
+
+      .cls-5, .cls-7 {
+        stroke-width: .216px;
+      }
+
+      .cls-16 {
+        font-family: Mundial-Hair, Mundial;
+        font-size: 12.33px;
+      }
+
+      .cls-6 {
+        fill: #222;
+      }
+
+      .cls-6, .cls-9 {
+        stroke-width: .265px;
+      }
+
+      .cls-17 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-7 {
+        fill: #2d2d2d;
+      }
+
+      .cls-8 {
+        fill: #67686b;
+      }
+
+      .cls-8, .cls-10, .cls-11, .cls-12 {
+        stroke-width: .203px;
+      }
+
+      .cls-9 {
+        fill: #292929;
+      }
+
+      .cls-10 {
+        fill: #333;
+      }
+
+      .cls-12 {
+        fill: #ccc;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-15" d="M34.736,8.739l3.1-1.036c1.221-.408,2.51-.617,3.809-.617h16.02v34.711h-15.614c-1.568,0-3.123-.252-4.596-.744l-2.718-.909V8.739Z"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-15" x="29.736" y="2.086" width="32.928" height="44.711"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="logo_rough">
+      <g id="logo1">
+        <g id="section-one-black">
+          <rect class="cls-2" x="21.698" y="9.112" width="4.496" height="30.659"/>
+          <rect class="cls-5" x="26.194" y="8.739" width="8.542" height="31.405"/>
+          <g>
+            <g class="cls-14">
+              <g class="cls-17">
+                <image width="70" height="95" transform="translate(29.281 1.653) scale(.48)" xlink:href="data:image/png;base64,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"/>
+              </g>
+            </g>
+            <path class="cls-13" d="M34.736,8.739l3.1-1.036c1.221-.408,2.51-.617,3.809-.617h16.02v34.711h-15.614c-1.568,0-3.123-.252-4.596-.744l-2.718-.909V8.739Z"/>
+          </g>
+          <ellipse class="cls-4" cx="46.526" cy="23.414" rx="2.502" ry="2.569"/>
+        </g>
+        <g id="lens-hood-black">
+          <path class="cls-1" d="M93.631,8.739l8.417-3.174c.382-.088.773-.132,1.167-.132h20.899c.546,0,.988.406.988.908v35.916c0,.659-.581,1.192-1.297,1.192h-21.182l-8.992-3.306V8.739Z"/>
+          <rect class="cls-7" x="91.833" y="8.739" width="1.798" height="31.405"/>
+        </g>
+        <g id="focal-black">
+          <rect class="cls-9" x="57.665" y="7.086" width="33.154" height="34.711"/>
+          <rect class="cls-6" x="90.819" y="7.953" width="1.014" height="32.931"/>
+          <g id="lines-focal">
+            <line class="cls-3" x1="58.514" y1="9.112" x2="89.923" y2="9.112"/>
+            <line class="cls-3" x1="58.514" y1="10.339" x2="89.923" y2="10.339"/>
+            <line class="cls-3" x1="58.514" y1="11.565" x2="89.923" y2="11.565"/>
+            <line class="cls-3" x1="58.514" y1="12.792" x2="89.923" y2="12.792"/>
+            <line class="cls-3" x1="58.514" y1="14.018" x2="89.923" y2="14.018"/>
+            <line class="cls-3" x1="58.514" y1="15.244" x2="89.923" y2="15.244"/>
+            <line class="cls-3" x1="58.514" y1="16.471" x2="89.923" y2="16.471"/>
+            <line class="cls-3" x1="58.514" y1="17.697" x2="89.923" y2="17.697"/>
+            <line class="cls-3" x1="58.514" y1="18.923" x2="89.923" y2="18.923"/>
+            <line class="cls-3" x1="58.514" y1="20.15" x2="89.923" y2="20.15"/>
+            <line class="cls-3" x1="58.514" y1="21.376" x2="89.923" y2="21.376"/>
+            <line class="cls-3" x1="58.514" y1="22.602" x2="89.923" y2="22.602"/>
+            <line class="cls-3" x1="58.514" y1="23.829" x2="89.923" y2="23.829"/>
+            <line class="cls-3" x1="58.514" y1="25.055" x2="89.923" y2="25.055"/>
+            <line class="cls-3" x1="58.514" y1="26.281" x2="89.923" y2="26.281"/>
+            <line class="cls-3" x1="58.514" y1="27.508" x2="89.923" y2="27.508"/>
+            <line class="cls-3" x1="58.514" y1="28.734" x2="89.923" y2="28.734"/>
+            <line class="cls-3" x1="58.514" y1="29.96" x2="89.923" y2="29.96"/>
+            <line class="cls-3" x1="58.514" y1="31.187" x2="89.923" y2="31.187"/>
+            <line class="cls-3" x1="58.514" y1="32.413" x2="89.923" y2="32.413"/>
+            <line class="cls-3" x1="58.514" y1="33.639" x2="89.923" y2="33.639"/>
+            <line class="cls-3" x1="58.514" y1="34.866" x2="89.923" y2="34.866"/>
+            <line class="cls-3" x1="58.514" y1="36.092" x2="89.923" y2="36.092"/>
+            <line class="cls-3" x1="58.514" y1="37.318" x2="89.923" y2="37.318"/>
+            <line class="cls-3" x1="58.514" y1="38.545" x2="89.923" y2="38.545"/>
+            <line class="cls-3" x1="58.514" y1="39.771" x2="89.923" y2="39.771"/>
+            <line class="cls-3" x1="58.514" y1="40.997" x2="89.923" y2="40.997"/>
+            <line class="cls-3" x1="58.514" y1="7.886" x2="89.923" y2="7.886"/>
+          </g>
+        </g>
+        <path class="cls-11" d="M9.991,5.433V1.324H1.043C.523,1.324.101,1.756.101,2.29v4.549c0,.704.556,1.275,1.242,1.275h8.648v-2.68Z"/>
+        <path id="body-main" class="cls-11" d="M24.192,52.705V4.174c0-.821-.649-1.487-1.449-1.487H4.736c-.8,0-1.449.666-1.449,1.487v48.531c0,.821.649,1.487,1.449,1.487h18.008c.8,0,1.449-.666,1.449-1.487Z"/>
+        <path id="handle" class="cls-8" d="M26.856,53.219c-.367-.036-.721-.14-1.074-.253-3.452-1.101-9.677.656-9.677-1.297,0-1.822-.201-38.131-.246-46.344-.005-.896.723-1.606,1.595-1.558,3.946.218,13.867.844,14.667,1.666.01.01.02.021.029.031.686.734.189,1.956-.794,2.086-1.817.241-6.242,1.414-6.242,7.13,0,5.137,4.599,2.154,6.898,8.22.297.783,0,11.302,0,11.302v15.104c0,2.369-1.987,4.223-4.284,3.998l-.872-.085Z"/>
+        <polygon class="cls-10" points="3.287 5.791 4.986 6.461 4.986 51.67 3.287 52.705 .982 52.705 .982 5.791 3.287 5.791"/>
+        <polygon id="dial-ex" class="cls-12" points="4.986 2.351 4.986 .103 14.996 .296 14.996 2.687 4.986 2.687 4.986 2.351"/>
+      </g>
+      <text class="cls-16" transform="translate(36.985 57.075) scale(.974 1)"><tspan x="0" y="0">SomnioVisio</tspan></text>
+    </g>
+  </g>
+</svg>

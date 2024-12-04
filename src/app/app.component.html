@@ -1,0 +1,68 @@
+<main class="main">
+  <!-- <main class="main" [class.light]="this._window.darkMode == false" [class.dark]="this._window.darkMode == true"> -->
+
+  <header>
+    <div class="navigation">
+      <div class="hamburger-button-wrapper">
+        <div class="hamburger-button" (click)="this.navClicked$.next(!this.navClicked)">
+          <div class="collapsed" [class.active]="this.navClicked">
+            <div class="bar" [class.active]="this.navClicked == true"></div>
+            <div class="bar" [class.active]="this.navClicked == true"></div>
+            <div class="bar" [class.active]="this.navClicked == true"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filler"></div>
+
+      <!-- <div class="logo"> -->
+      <!-- <img src="../assets/svgs/graphic_design/logo_blk.svg" alt=""> -->
+      <!-- </div> -->
+
+    </div>
+  </header>
+  <div class='navigation-expanded' [@expandNav]="this.navClicked == true ? 'active' : 'inactive'">
+    <div class="filler"></div>
+    <a routerLinkActive="active" routerLink="/home"> HOME </a>
+    <a routerLinkActive="active" routerLink="/gallery"> PHOTOS </a>
+    <a routerLinkActive="active" routerLink="/gallery"> CONTACT </a>
+
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+
+    <div class="row">
+      <div class="wrapper">
+        <div class="toggle">
+          <input class="toggle-input" type="checkbox" [defaultValue]="this.isDarkMode" (input)="this.toggleTheme()" />
+          <div class="toggle-bg"></div>
+          <div class="toggle-switch">
+            <div class="toggle-switch-figure"></div>
+            <div class="toggle-switch-figureAlt"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- need to change await speed back  -->
+  <!-- <div class="content" @page (@page.start)="captureStartEvent($event)" (@page.done)="captureDoneEvent($event)" -->
+  <!-- [@exit]="this.isLensComplete ? 'begin' : 'end'" (@exit.done)="this.animationDone = true"> -->
+  <!-- <div class='main-title'>welcome to </div> -->
+  <!-- <div class="logo"> -->
+  <!-- <div class="row-one"> -->
+  <!-- <img src="../assets/svgs/lens-blk/section-one-blk.svg" alt=""> -->
+  <!-- <img src="../assets/svgs/lens-blk/mid-blk.svg" alt=""> -->
+  <!-- <img src="../assets/svgs/lens-blk/lens-hood-blk.svg" alt=""> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="stagger-text"> -->
+  <!-- <div class="wrapper"> -->
+  <!-- <div id="title-text" *ngFor="let t of titleArray">{{ t }}</div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</main>

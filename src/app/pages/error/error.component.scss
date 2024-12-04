@@ -1,0 +1,13 @@
+.page-container {
+    position: absolute;
+    // overflow: scroll;
+   
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    button {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}

@@ -1,0 +1,435 @@
+
+
+main {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    overflow: visible;
+    .navigation-expanded {
+        position: fixed;
+        background: rgba(9, 8, 8, 0.63);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        height: 90vh;
+        z-index: 9999;
+        top: 6vh;
+        left: -375px;
+       
+        border-radius: 25px;
+        backdrop-filter: blur(25px);
+        gap: 25px;
+        .filler {
+            flex: 1;
+        }
+        a {
+            transition: all 0.2s ease-out;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 10px;
+            flex: 1;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(220, 220, 220);
+            width: 85%;
+            border-radius: 10px;
+            background: rgba(15, 15, 15, 0.63);
+
+            &:hover {
+                transition: all 0.1s ease-in;
+                transform: scale(0.9);
+                background: rgba(62, 62, 62, 0.63);
+                color: white;
+            }
+        }
+
+        .wrapper {
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        /////////////////////////////////////////////////
+        // Mixins
+        /////////////////////////////////////////////////
+        @mixin crater($top, $left, $size) {
+            content: "";
+            position: absolute;
+            top: $top;
+            left: $left;
+            width: $size;
+            height: $size;
+            background-color: #efeeda;
+            border-radius: 100%;
+            border: 4px solid #dee1c5;
+        }
+
+        @mixin cloudBubble($top, $right, $width, $height, $deg) {
+            content: "";
+            display: block;
+            position: relative;
+            top: $top;
+            right: $right;
+            width: $width;
+            height: $height;
+            border: 8px solid #d4d4d2;
+            border-radius: 100%;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            transform: rotateZ($deg);
+            background-color: #fff;
+        }
+
+        /////////////////////////////////////////////////
+        // Day State
+        /////////////////////////////////////////////////
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            margin-left: 100px;
+            padding: 4px;
+            border-radius: 40px;
+        }
+
+        .toggle:before,
+        .toggle:after {
+            content: "";
+            display: table;
+        }
+
+        .toggle:after {
+            clear: both;
+        }
+
+        .toggle-bg {
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 100%;
+            height: 100%;
+            background-color: #c0e6f6;
+            border-radius: 40px;
+            border: 4px solid #81c0d5;
+            transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .toggle-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            border-radius: 40px;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin-left: 50px;
+            background-color: #f5eb42;
+            border: 4px solid #e4c74d;
+            border-radius: 50%;
+            transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .toggle-switch-figure {
+            position: absolute;
+            bottom: -14px;
+            left: -50px;
+            display: block;
+            width: 80px;
+            height: 30px;
+            border: 8px solid #d4d4d2;
+            border-radius: 20px;
+            background-color: #fff;
+            transform: scale(0.4);
+            transition: all 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            &:after {
+                @include cloudBubble(-65px, -42px, 15px, 15px, 70deg);
+            }
+            &:before {
+                @include cloudBubble(-25px, -10px, 30px, 30px, 30deg);
+            }
+        }
+
+        .toggle-switch-figureAlt {
+            @include crater(5px, 2px, 2px);
+
+            box-shadow:
+                42px -7px 0 -3px #fcfcfc,
+                75px -10px 0 -3px #fcfcfc,
+                54px 4px 0 -4px #fcfcfc,
+                83px 7px 0 -2px #fcfcfc,
+                63px 18px 0 -4px #fcfcfc,
+                44px 28px 0 -2px #fcfcfc,
+                78px 23px 0 -3px #fcfcfc;
+
+            transition: all 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: scale(0);
+        }
+
+        .toggle-switch-figureAlt:before {
+            @include crater(-6px, 18px, 7px);
+        }
+
+        .toggle-switch-figureAlt:after {
+            @include crater(19px, 15px, 2px);
+        }
+
+        /////////////////////////////////////////////////
+        // Night State
+        /////////////////////////////////////////////////
+        .toggle-input:checked ~ .toggle-switch {
+            margin-left: 0;
+            border-color: #dee1c5;
+            background-color: #fffdf2;
+        }
+
+        .toggle-input:checked ~ .toggle-bg {
+            background-color: #484848;
+            border-color: #202020;
+        }
+
+        .toggle-input:checked ~ .toggle-switch .toggle-switch-figure {
+            margin-left: 40px;
+            opacity: 0;
+            transform: scale(0.1);
+        }
+
+        .toggle-input:checked ~ .toggle-switch .toggle-switch-figureAlt {
+            transform: scale(1);
+        }
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        min-width: 100%;
+        height: 70px;
+        max-height: 70px;
+        z-index: 10000;
+        overflow: visible;
+
+        display: flex;
+        .navigation {
+            z-index: 10000;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+
+            .hamburger-button-wrapper {
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex: 0.5;
+                width: 100%;
+                height: 100%;
+
+                .hamburger-button {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    position: absolute;
+                    display: flex;
+                    min-height: 70px;
+                    min-width: 50px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                    align-items: center;
+                    .collapsed {
+                        transition: all 0.5s 0.25s ease;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .bar {
+                            transition: all 0.3s ease;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            min-width: 40px;
+                            height: 5px;
+                            background: var(--hamburger-menu);
+                            transform: translateX(0px);
+                            &:nth-child(1) {
+                                transform: rotate(0);
+                            }
+                            &:nth-child(2) {
+                                top: 15px;
+                                opacity: 1;
+                            }
+                            &:nth-child(3) {
+                                top: 30px;
+                                transform: rotate(0);
+                            }
+
+                            &.active {
+                                position: absolute;
+                                top: 0;
+                                left: -20px;
+
+                                transition: all 0.3s ease;
+
+                                &:nth-child(1) {
+                                    min-width: 30px;
+                                    height: 3px;
+                                    transform: rotate(-45deg) scale(0.9);
+                                }
+                                &:nth-child(2) {
+                                    transform: scale(0.9);
+                                    opacity: 0;
+                                }
+                                &:nth-child(3) {
+                                    min-width: 30px;
+                                    height: 3px;
+                                    transform: rotate(45deg) scale(0.9);
+                                }
+                                width: 40px;
+                                height: 5px;
+                                background: var(--hamburger-menu);
+                            }
+                        }
+                    }
+                }
+            }
+            .filler {
+                display: flex;
+                flex: 8;
+                min-height: 100%;
+            }
+            .logo {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                flex: 1;
+                img {
+                    max-height: 65px;
+                    max-width: 200px;
+                    width: 175px;
+                }
+            }
+        }
+    }
+    .content {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        font-family: "mundial";
+
+        .main-title {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 46px;
+            margin-top: 45px;
+            margin-bottom: 45px;
+            font-weight: 200;
+            letter-spacing: 5px;
+            width: 100%;
+            height: 5%;
+            padding-bottom: 5px;
+        }
+        .logo {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            width: 100%;
+            .row-one {
+                margin-top: 20%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding-bottom: 5%;
+                img {
+                    position: relative;
+                    width: 350px;
+                    height: 350px;
+                    &:nth-child(3) {
+                        margin-left: -20px;
+                    }
+                }
+            }
+        }
+        .stagger-text {
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            top: 20%;
+            left: 0;
+            font-size: 200px;
+            letter-spacing: 5px;
+            color: rgb(224, 0, 0);
+            width: 100%;
+            height: 100%;
+            .wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .main-content {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: visible;
+        display: flex;
+    }
+}
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        opacity: 1;
+        z-index: 9999;
+    }
+}
+
+@keyframes hoverHamburger {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (width <= 900px) {
+}

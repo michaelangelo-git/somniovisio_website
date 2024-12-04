@@ -1,0 +1,11 @@
+.page-container {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+}
+.page-container button {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}/*# sourceMappingURL=error.component.css.map */
